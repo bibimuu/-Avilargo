@@ -20,18 +20,18 @@
       <path d="M41 11.5L9 1" stroke="white" stroke-width="0.5"/>
     </svg>
     <ul class="header-menu">
-      <li><a href="#">Introduce</a></li>
-      <li><a href="#">Room</a></li>
-      <li><a href="#">Activity</a></li>
-      <li><a href="#">Hotel Charges</a></li>
-      <li><a href="#">Access</a></li>
+      <li><a href="#introduce">Introduce</a></li>
+      <li><a href="#room">Room</a></li>
+      <li><a href="#activity">Activity</a></li>
+      <li><a href="#plan">Hotel Charges</a></li>
+      <li><a href="#access">Access</a></li>
     </ul>
   </header>
 
   <section class="section-firstview">
     <div class="line-decoration-firstview"></div>
     <div class="upper-box">
-      <button class="arrow-btn"><img src="../ASSETS/arrow-right.svg" alt="arrow-right"></button>
+      <button id="firstviewPhotoChange" class="arrow-btn"><img src="../ASSETS/arrow-right.svg" alt="arrow-right"></button>
       <h1 class="service-name">`Avilargo</h1>
       <div class="action-btn-box">
         <button class="inquiry-btn">お問い合わせ</button>
@@ -47,7 +47,7 @@
     <div class="black-glass-firstview"></div>
   </section>
 
-  <section class="section-welcome">
+  <section id="introduce" class="section-welcome">
     <div class="title-area-welcome">
       <div class="line-decoration-welcome1"></div>
       <div class="decoration3"></div>
@@ -67,24 +67,24 @@
     <div class="line-decoration-welcome4"></div>
   </section>
 
-  <section class="section-interior">
+  <section id="room" class="section-interior">
     <div class="white-glass-Interior"></div>
     <div class="line-decoration-welcome5"></div>
     <div class="black-glass-interior">
       <div class="selective-photo">
         <ul class="photo-menu">
-          <li>Living Room</li>
-          <li>Bathroom</li>
-          <li>Bedroom</li>
-          <li>Kitchen</li>
+          <li id="living" class="text-animation-interior">Living Room</li>
+          <li id="bath" class="text-animation-interior">Bathroom</li>
+          <li id="bed" class="text-animation-interior">Bedroom</li>
+          <li id="kitchen" class="text-animation-interior">Kitchen</li>
         </ul>
-        <img class="photo-interior" src="../ASSETS/interior-room.png" alt="interiorRoom">
+        <div id="interior-room" class="photo-box-interior"></div>
       </div>
       <p class="intoroduction-interior">紹介テキストあいうえお紹介テキストあいうえお紹介テキストあいうえお紹介紹介テキストあいうえお紹介テキストあいうえお紹介テキストあいうえお紹介テキストあいうえお</p>
     </div>
   </section>
 
-  <section class="section-activity">
+  <section id="activity" class="section-activity">
     <div class="photo-box-activity">
       <img class="photo-activity activity3" src="../ASSETS/activity3.png" alt="activity3">
       <div class="text-photo-activity">
@@ -124,7 +124,7 @@
     </div>
   </section>
 
-  <section class="section-price">
+  <section id="plan" class="section-price">
     <div class="line-decoration-price1"></div>
     <div class="line-decoration-price2"></div>
     <div class="decoration4"></div>
@@ -137,18 +137,13 @@
       </div>
 
       <table class="table-price">
-        <colgroup>
-          <col span="1">
-	        <col span="1" class="colgroup2">
-	        <col span="1" class="colgroup3">
-        </colgroup>
         <tr>
           <th></th>
-          <td class="first-cell">
+          <td class="first-cell hover-animation1">
             <div class="plan">Plan</div>
             <div class="plan-name">A</div>
           </td>
-          <td class="first-cell">
+          <td class="first-cell hover-animation2">
             <div class="plan">Plan</div>
             <div class="plan-name">B</div>
           </td>
@@ -156,38 +151,38 @@
         </tr>
         <tr class="table-contents table-contents-jp">
           <th>適用</th>
-          <td class="business-day">平日・日曜日</td>
-          <td class="business-day">土曜日・祝日</td>
+          <td class="business-day hover-animation1">平日・日曜日</td>
+          <td class="business-day hover-animation2">土曜日・祝日</td>
           <td class="business-day business-day-add"></td>
         </tr>
         <tr class="table-contents">
           <th>基本料金</th>
-          <td class="price">¥72,000</td>
-          <td class="price">¥92,000</td>
+          <td class="price hover-animation1">¥72,000</td>
+          <td class="price hover-animation2">¥92,000</td>
           <td class="price price-add"></td>
         </tr>
         <tr class="table-contents">
           <th>別途清掃費</th>
-          <td class="cleaning">¥15,000</td>
-          <td class="cleaning">¥15,000</td>
+          <td class="cleaning hover-animation1">¥15,000</td>
+          <td class="cleaning hover-animation2">¥15,000</td>
           <td class="cleaning cleaning-add"></td>
         </tr>
         <tr class="table-contents table-space">
           <th></th>
-          <td></td>
-          <td></td>
+          <td class="hover-animation1"></td>
+          <td class="hover-animation2"></td>
           <td class="space-add"></td>
         </tr>
         <tr class="table-sum">
           <th>合計</th>
-          <td class="sum">¥87,000</td>
-          <td class="sum">¥107,000</td>
+          <td class="sum hover-animation1">¥87,000</td>
+          <td class="sum hover-animation2">¥107,000</td>
           <td class="sum sum-add"></td>
         </tr>
       </table>
   </section>
 
-  <section class="section-access">
+  <section id="access" class="section-access">
     <div class="decoration5"></div>
     <h1 class="title-access">Access</h1>
     <div class="black-glass-access"></div>
@@ -221,7 +216,9 @@
     </ul>
   </footer>
 
+  
   <script type="text/javascript" src="../JS/jquery-3.6.1.min.js"></script>
+  <script src="../JS/animation.js"></script>
   <script src="../JS/index.js"></script>
 </body>
 </html>

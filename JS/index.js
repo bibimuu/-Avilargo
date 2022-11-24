@@ -68,6 +68,4 @@ $(function() {
       // 白い、黒い背景を置く
       $(".white-glass-access").css("width", ContentsAreaPlusSideMargin);
       $(".black-glass-access").css("width", ContentsAreaPlusSideMargin);
-      const accessSectionHeight = $(".section-access").height();
-      console.log(accessSectionHeight)
 });
