@@ -64,15 +64,13 @@ iframe {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to right, #212427 0%,#212427 56%,rgba(0,0,0,0) 56%, rgba(0,0,0,0) 100%);
   border-bottom: #272727 solid 1px;
   position: fixed;
   z-index: 2;
 }
 
 .header-bg-color {
-  /* ヘッダーアニメーション */
-  background: linear-gradient(to right, #212427 0%,#212427 56%,#212427 56%, #212427 100%);
+  background: #212427;
 }
 
 .header-box svg {
@@ -95,21 +93,14 @@ iframe {
 .header-menu a {
   font-family: 'Helvetica Nuel';
   letter-spacing: 0.1em;
-  font-weight: 300;
-}
-
-.line-decoration-header{
-  border-left: rgba(255, 255, 255, 0.05) solid 1px;
-  height: 100%;
-  position: absolute;
-  left: 56%;
+  font-weight: 100;
 }
 
 /* FIRSTVIEW */
 .line-decoration-firstview{
   border-left: rgba(255, 255, 255, 0.05) solid 1px;
-  height: 100%;
   position: absolute;
+  bottom: 0;
   left: 56%;
 }
 
@@ -151,6 +142,15 @@ iframe {
   width: 33%;
 }
 
+.action-btns {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: fixed;
+  top: 180px;
+  z-index: 5;
+}
+
 .inquiry-btn {
   height: 150px;
   width: 150px;
@@ -187,7 +187,7 @@ iframe {
   background: rgba(183, 183, 183, 0.4);
   position: absolute;
   right: 150px;
-  top: 300px;
+  top: 0;
   z-index: 1;
 }
 
@@ -296,7 +296,7 @@ iframe {
 
 .text-decoration-welcome {
   width: 100%;
-  background-image: url(../ASSETS/interiorRoomText.png);
+  background-image: url('../ASSETS/interiorRoomText.svg');
   height: 58px;
 }
 
@@ -549,7 +549,7 @@ iframe {
 .text-photo-price {
   margin-top: 40px;
   margin-right: 37px;
-  padding-bottom: 200px;
+  margin-bottom: 200px;
 }
 
 .title-price {

@@ -13,6 +13,9 @@ $(function() {
     // ファーストビュー飾り用
     $(".lower-box-decoration1").css("marginLeft", ContentsAreaSideMarginMinus);
     $(".lower-box-decoration1").css("width", ContentsAreaSideMarginPlus);
+    const firstViewHeight = $(".section-firstview").height();
+    const lineDecorationHeightFirstView = firstViewHeight - 100;
+    $(".line-decoration-firstview").css("height",lineDecorationHeightFirstView);
 
     // welcome飾り用
     const photoWidthWelcome = $(".photo-welcome").width();
